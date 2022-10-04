@@ -30,9 +30,8 @@ I will use Jira for project management. I will also use Git as version control f
 
 
 
-Video demonstration
-CRUD Functionality
-CI/CD Pipeline Automated when new Github code pushed.
+Video demonstration showing CRUD Functionality,
+CI/CD Pipeline Automation when new Github code pushed your changes should automatically be reflected on the deployed application without manual configuration.
 
 
 
