@@ -71,7 +71,7 @@ CI/CD Pipeline Automation when new Github code pushed your changes should automa
 - Setup Jenkins with shell script
 - ```bash install-jenkins.sh```
 - Run this command to be in Jenkins and Docker group ``` sudo usermod -aG docker jenkins ${USER}```
-- Port forward port 8080, 8081
+- Port forward port 8080
 - In your webbrowser put in the url 
   ```IPADDRESS:8080```
 - Copy ```initial Admin Password``` after Jenkins install and paste into Jenkins.
