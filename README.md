@@ -65,6 +65,7 @@ CI/CD Pipeline Automation when new Github code pushed your changes should automa
   ```bash install-docker.sh```
 - Setup Docker Compose with shell script
   ```bash install-dockercompose.sh```
+- Setup Docker Swarm ```https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/```
 - Setup Jenkins with shell script
 - ```bash install-jenkins.sh```
 - Port forward port 8080
@@ -73,7 +74,6 @@ CI/CD Pipeline Automation when new Github code pushed your changes should automa
 - Copy ```initial Admin Password``` after Jenkins install and paste into Jenkins.
 - Use Jenkinsfile for the Jenkins Pipeline
 - Port forward port 5000 
-- Setup Docker Swarm
 - Setup Github webhooks to auto pull the code from your repository.
 -  Push the code to have the pipeline test build and deploy.
 -  Put http://[IPADDRESS]:5000 into web browser to see the web application.
