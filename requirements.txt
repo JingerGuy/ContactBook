@@ -1,1 +1,11 @@
 flask
+flask_sqlalchemy
+SQLAlchemy
+render_template
+request
+redirect
+url_for
+flash
+Jinja2
+WTForms
+itsdangerous
