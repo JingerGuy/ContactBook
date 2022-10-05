@@ -37,7 +37,7 @@ pipeline {
 }
 
 
-     stage('docker stop container') {
+     stage('Docker stop container') {
          steps {
             sh 'docker ps -f name=contactbookContainer -q | xargs --no-run-if-empty docker container stop'
             sh 'docker container ls -a -fname=contactbookContainer -q | xargs -r docker container rm'
