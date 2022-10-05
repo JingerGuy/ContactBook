@@ -14,7 +14,7 @@ This project is a simple Python & Flask application that is a ContactBook that a
 - Docker
 - Jenkins/Pipeline/CI-CD
 - Linux
-- Docker Swarm if you wish
+
 
 
 My project is a simple Contact Book that is using python & Flask that demonstrates CRUD functionality that integrates with a sqlite database. 
@@ -26,17 +26,19 @@ Here is my ERD Diagram to illustrate relationships between entities and models i
 
 
 
-I am using Microsoft Azure to deploy 3 Linux Virtual Machine's all running Ubuntu Server 20.04 LTS and in the same Resource Group. 1 Will be the Swarm Master, 1 Will be Swarm Worker and both will have docker installed and 1 Will be the Jenkins Build Server with Jenkins installed.
+I am using Microsoft Azure to deploy a Linux Virtual Machine running Ubuntu Server 20.04 LTS and in the same Resource Group. It will have docker/docker compose installed and Jenkins installed.
 
 
-I will then create a continuous integration (CI)/continuous deployment (CD) pipeline with the use of Jenkin's to Test with pytest, Build, and Deploy my application with the use of Dockerhub to push my built application image from to then pull to a Docker Swarm to deploy my image with atleast one Master node and one Worker node.
+I will then create a continuous integration (CI)/continuous deployment (CD) pipeline with the use of Jenkin's to Test with pytest, Build, and Deploy my application with the use of Dockerhub to push my built application image from to then pull to Docker to deploy my image with atleast one Master node and one Worker node.
 
 ![Pipeline INF drawio](https://user-images.githubusercontent.com/110673932/193868373-554d3807-98c5-49f2-98d9-aea93ee1489c.png)
 
 
 
 
-I will use Jira for project management. I will also use Git as version control for my project and Github as my repository .
+I will use Jira for project management. I will also use Git as version control for my project and Github as my repository.
+
+Jira Project link: https://st1109.atlassian.net/jira/software/projects/CN/boards/9
 
 
 
@@ -68,15 +70,19 @@ CI/CD Pipeline Automation when new Github code pushed your changes should automa
 - Setup Docker Swarm ```https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/```
 - Setup Jenkins with shell script
 - ```bash install-jenkins.sh```
+- Run this command to be in Jenkins and Docker group ``` sudo usermod -aG docker jenkins ${USER}```
 - Port forward port 8080
 - In your webbrowser put in the url 
   ```IPADDRESS:8080```
 - Copy ```initial Admin Password``` after Jenkins install and paste into Jenkins.
+- Click on install recommended plugins
+- Enter your User Information and save it to login next time on Jenkins.
+- Create and login to Dockerhub account and goto settings and security and make a access token copy and poste into the machine.
 - Use Jenkinsfile for the Jenkins Pipeline
 - Port forward port 5000 
 - Setup Github webhooks to auto pull the code from your repository.
--  Push the code to have the pipeline test build and deploy.
--  Put http://[IPADDRESS]:5000 into web browser to see the web application.
+- Push the code to have the pipeline test build and deploy.
+- Put http://[IPADDRESS]:5000 into web browser to see the web application.
 
 
 ## 4. How to Use the Project
