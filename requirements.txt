@@ -1,8 +1,1 @@
-flask
-flask_sqlalchemy
-pymysql
-render_template
-request
-redirect
-url_for
-flash
+flask 2.2.2
