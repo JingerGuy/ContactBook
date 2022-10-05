@@ -1,29 +1,41 @@
 pipeline {
     agent any
     environment {
-    DOCKERHUB_CREDENTIALS = credentials('docker-hub-gingerguy')
+        dockerImage = ''
+        registry = 'gingerguy/contactbook'
+        registryCredential = 'docker-hub-gingerguy'
     }
     stages {
-        stage('Build') { 
+         stage('Checkout') {
             steps {
-                echo "Building Image..."
-                git 'git@github.com:JingerGuy/ContactBook.git'
-                sh 'docker build -t gingerguy/contactbookapp:$BUILD_NUMBER .'
-                sh 'echo $DOCKERHUB_CREDENTIALS_PSW | docker login -u $DOCKERHUB_CREDENTIALS_USR --password-stdin'
-                sh 'docker push gingerguy/contactbookapp:$BUILD_NUMBER'
-                
+                    checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'ht>
+
+        }
+    }
+
+        stage('Build') {
+            steps {
+             script {
+                    dockerImage = docker.build registry
             }
         }
-        stage('Test') { 
+    }
+        stage('Test') {
             steps {
                 echo "Testing..."
             }
         }
-        stage('Deploy') { 
+        stage('DockerHub Upload') {
             steps {
-                echo "Deploying..."
-                
+             script {
+                    docker.withRegistry( '', registryCredential ) {
+                    dockerImage.push()
             }
         }
     }
 }
+
+        stage('Deploy') {
+            steps {
+                echo "Deploying..."
+
