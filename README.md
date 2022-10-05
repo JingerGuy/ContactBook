@@ -8,12 +8,13 @@
 
 ## 1. Project Description
 
-This project is a simple Python & Flask application that includes the following:
+This project is a simple Python & Flask application that is a ContactBook that allows you to add, delete and edit contacts but that also includes the following:
 - A simple Python & Flask Application showing CRUD functionality
-- How to use SQLite for a database
-- Jenkins
-- Docker, Docker Compose, Docker Swarm
+- SQLite for a database
+- Docker
+- Jenkins/Pipeline/CI-CD
 - Linux
+- Docker Swarm if you wish
 
 
 My project is a simple Contact Book that is using python & Flask that demonstrates CRUD functionality that integrates with a sqlite database. 
@@ -58,21 +59,24 @@ CI/CD Pipeline Automation when new Github code pushed your changes should automa
 
 ## 3. How to Install and Run The Project
 
-Here is a short version
-
-1. Clone this project from Github
-2. Setup docker on Linux ``` https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-20-04 ```
-3. Setup Jenkins on Linux ``` https://www.jenkins.io/doc/book/installing/linux/ ```
-4. Use Jenkinsfile for the Jenkins Pipeline
-5. Port forward port 5000 for the image
-6. Setup Github webhooks to auto pull the code from your repository.
-7. Push the code to have the pipeline test build and deploy.
-
-
-   
-
-
-
+- Clone this project from Github
+- Change your directory to installscripts ```cd installscripts/``` 
+- Setup Docker with shell script 
+  ```bash install-docker.sh```
+- Setup Docker Compose with shell script
+  ```bash install-dockercompose.sh```
+- Setup Jenkins with shell script
+- ```bash install-jenkins.sh```
+- Port forward port 8080
+- In your webbrowser put in the url 
+  ```IPADDRESS:8080```
+- Copy ```initial Admin Password``` after Jenkins install and paste into Jenkins.
+- Use Jenkinsfile for the Jenkins Pipeline
+- Port forward port 5000 
+- Setup Docker Swarm
+- Setup Github webhooks to auto pull the code from your repository.
+-  Push the code to have the pipeline test build and deploy.
+-  Put http://[IPADDRESS]:5000 into web browser to see the web application.
 
 
 ## 4. How to Use the Project
@@ -80,8 +84,5 @@ Here is a short version
 1. git clone this repository to get all the files.
 2. Install Python 3.10.6``` https://www.python.org/downloads/release/python-3106/```
 3. Install Flask 2.2.2``` https://www.python.org/downloads/release/python-3106/```
-4. Run the code and put http://127.0.0.1:5000 into web browser to see the web application.
-5. Install openjdk and Jenkins if you want to build your own Pipeline and use the Jenkinsfile that has the pipeline for Jenkins.
-6. Use docker build to build an image and install docker to run the docker image.
-
+4. Use your favourite IDE, Run the code and paste http://127.0.0.1:5000 into web browser to see the web application.
 
