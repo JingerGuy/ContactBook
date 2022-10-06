@@ -6,7 +6,7 @@ app.secret_key = "Secret Key"
 
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///home/jenkins/.jenkins/workspace/ContactBook Pipeline/data.db"
+app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///data.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
