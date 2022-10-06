@@ -1,6 +1,5 @@
 flask
-flask_sqlalchemy
-SQLAlchemy
 Jinja2
 WTForms
 itsdangerous
+from flask_sqlalchemy import SQLAlchemy
