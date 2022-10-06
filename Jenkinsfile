@@ -49,7 +49,7 @@ pipeline {
     stage('Docker Run') {
      steps{
          script {
-            dockerImage.run("-p 5000:5000 --rm --name contactbookContainer")
+            dockerImage.run("-p 5000:5000 -v data.db --rm --name contactbookContainer")
          }
       }
     }
