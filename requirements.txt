@@ -3,4 +3,3 @@ Jinja2
 WTForms
 itsdangerous
 SQLAlchemy
-sqlite
