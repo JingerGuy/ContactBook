@@ -31,7 +31,8 @@ I am using Microsoft Azure to deploy a Linux Virtual Machine running Ubuntu Serv
 
 I will then create a continuous integration (CI)/continuous deployment (CD) pipeline with the use of Jenkin's to Test with pytest, Build, and Deploy my application with the use of Dockerhub to push my built application image from to then pull to Docker to deploy my image with atleast one Master node and one Worker node.
 
-![Pipeline INF drawio](https://user-images.githubusercontent.com/110673932/193868373-554d3807-98c5-49f2-98d9-aea93ee1489c.png)
+![Pipeline INF drawio](https://user-images.githubusercontent.com/110673932/194330730-a5126b72-be53-4ccb-8009-c0b6e879772b.png)
+
 
 
 
