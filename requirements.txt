@@ -1,7 +1,2 @@
-flask
-Jinja2
-WTForms
-itsdangerous
-SQLAlchemy
-flask_sqlalchemy
-pymysql
+Flask==2.2.2
+Flask_SQLAlchemy==2.5.1
