@@ -77,7 +77,7 @@ CI/CD Pipeline Automation when new Github code pushed your changes should automa
 - Copy ```initial Admin Password``` after Jenkins install and paste into Jenkins.
 - Click on install recommended plugins
 - Enter your User Information and save it to login next time on Jenkins.
-- Create and login to Dockerhub account and goto settings and security and make a access token copy and poste into the machine.
+- Input this command into terminal ```sudo chmod 666 /var/run/docker.sock```
 - Use Jenkinsfile for the Jenkins Pipeline
 - Port forward port 5000 
 - Setup Github webhooks to auto pull the code from your repository.
