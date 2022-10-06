@@ -3,3 +3,5 @@ Jinja2
 WTForms
 itsdangerous
 SQLAlchemy
+flask_sqlalchemy
+pymysql
