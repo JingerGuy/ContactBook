@@ -8,6 +8,9 @@
 
 ## 1. Project Description
 
+![Screenshot 2022-10-06 165415](https://user-images.githubusercontent.com/110673932/194360848-8c52f1b4-f462-48ea-834e-5d269eb338d2.png)
+
+
 This project is a simple Python & Flask application that is a ContactBook that allows you to add, delete and edit contacts but that also includes the following:
 - A simple Python & Flask Application showing CRUD functionality
 - SQLite for a database
@@ -62,34 +65,34 @@ CI/CD Pipeline Automation when new Github code pushed your changes should automa
 
 ## 3. How to Install and Run The Project
 
-- Clone this project from Github
-- Change your directory to installscripts ```cd installscripts/``` 
+- Clone this project from my Github ``` https://github.com/JingerGuy/ContactBook ```
+- Change your directory to installscripts ``` cd installscripts/ ``` 
 - Setup Docker with shell script 
-  ```bash install-docker.sh```
+  ``` bash install-docker.sh ```
 - Setup Docker Compose with shell script
-  ```bash install-dockercompose.sh```
-- Setup Docker Swarm ```https://docs.docker.com/engine/swarm/swarm-tutorial/create-swarm/```
+  ``` bash install-dockercompose.sh ```
 - Setup Jenkins with shell script
-- ```bash install-jenkins.sh```
+- ``` bash install-jenkins.sh ```
 - Run this command to be in Jenkins and Docker group ``` sudo usermod -aG docker jenkins ${USER}```
 - Port forward port 8080
 - In your webbrowser put in the url 
-  ```IPADDRESS:8080```
-- Copy ```initial Admin Password``` after Jenkins install and paste into Jenkins.
+  ``` IPADDRESS:8080 ```
+- Copy ``` initial Admin Password ``` after Jenkins install and paste into Jenkins.
 - Click on install recommended plugins
 - Enter your User Information and save it to login next time on Jenkins.
-- Input this command into terminal ```sudo chmod 666 /var/run/docker.sock```
-- Use Jenkinsfile for the Jenkins Pipeline
-- Port forward port 5000 
+- Input this command into terminal ``` sudo chmod 666 /var/run/docker.sock ```
+- Use Jenkinsfile for the ``` Jenkins Pipeline ```
+- Port forward ``` port 5000 ```
 - Setup Github webhooks to auto pull the code from your repository.
 - Push the code to have the pipeline test build and deploy.
-- Put http://[IPADDRESS]:5000 into web browser to see the web application.
+- Put ```http://[IPADDRESS]:5000``` into web browser to see the web application.
 
 
 ## 4. How to Use the Project
 
-1. git clone this repository to get all the files.
-2. Install Python 3.10.6``` https://www.python.org/downloads/release/python-3106/```
-3. Install Flask 2.2.2``` https://www.python.org/downloads/release/python-3106/```
+1. Clone this repository to get all the files ``` git clone https://github.com/JingerGuy/ContactBook  ```
+2. Install Python 3.10.6 ``` https://www.python.org/downloads/release/python-3106/```
+3. Install Flask 2.2.2 ``` https://www.python.org/downloads/release/python-3106/```
 4. Use your favourite IDE, Run the code and paste http://127.0.0.1:5000 into web browser to see the web application.
+
 
