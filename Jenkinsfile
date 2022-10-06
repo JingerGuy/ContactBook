@@ -9,7 +9,8 @@ pipeline {
          stage('Git Clone') {
             steps {
                     checkout([$class: 'GitSCM', branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'Github', url: 'https://github.com/JingerGuy/ContactBook']]])
-
+                    ls -l
+                    pwd
         }
     }
 
