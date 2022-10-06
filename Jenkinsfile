@@ -5,6 +5,7 @@ pipeline {
         registry = 'gingerguy/contactbook'
         registryCredential = 'docker-hub-gingerguy'
     }
+    // Cloning Github Project
     stages {
          stage('Git Clone') {
             steps {
@@ -13,7 +14,7 @@ pipeline {
                     pwd
         }
     }
-
+            // Building Docker Image
         stage('Build Image') {
             steps {
              script {
@@ -21,12 +22,15 @@ pipeline {
             }
         }
     }
+        // Testing
         stage('Test') {
             steps {
                 echo "Testing..."
             }
        
         }
+        
+        // Pushing docker image to dockerhub
         stage('DockerHub Upload') {
             steps {
              script {
