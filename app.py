@@ -7,7 +7,7 @@ app.secret_key = "Secret Key"
 
 
 
-app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///data1.db"
+app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///data.db"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
@@ -75,4 +75,4 @@ def delete(id):
  
 
 if __name__=='__main__':
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True)
