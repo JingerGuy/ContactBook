@@ -32,7 +32,7 @@ Here is my ERD Diagram to illustrate relationships between entities and models i
 I am using Microsoft Azure to deploy a Linux Virtual Machine running Ubuntu Server 20.04 LTS and in the same Resource Group. It will have docker/docker compose installed and Jenkins installed.
 
 
-I will then create a continuous integration (CI)/continuous deployment (CD) pipeline with the use of Jenkin's to Test with pytest, Build, and Deploy my application with the use of Dockerhub to push my built application image from to then pull to Docker to deploy my image with atleast one Master node and one Worker node.
+I will then create a continuous integration (CI)/continuous deployment (CD) pipeline with the use of Jenkin's to Test with pytest, Build, and Deploy my application with the use of Dockerhub to push my built application image from to then pull to Docker to deploy my image with.
 
 ![Pipeline INF drawio](https://user-images.githubusercontent.com/110673932/194330730-a5126b72-be53-4ccb-8009-c0b6e879772b.png)
 
@@ -88,8 +88,9 @@ Video Link: https://drive.google.com/file/d/1GhrCVoXjZsUekaTdvcGG920ABlpzoG9H/vi
 - Use Jenkinsfile for the ``` Jenkins Pipeline ```
 - Port forward ``` port 5000 ```
 - Setup Github webhooks to auto pull the code from your repository. ``` https://www.youtube.com/watch?v=ZiHMsEKklKQ ```
-- Push the code to have the pipeline test build and deploy.
+- ```Push a commit to github``` to have the webhook activate to push your project to the jenkins pipeline that will test build, push and pull and deploy the image.
 - Put ```http://[IPADDRESS]:5000``` into web browser to see the web application.
+- 
 
 
 ## 4. How to Use the Project
