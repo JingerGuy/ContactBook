@@ -51,6 +51,8 @@ Video demonstration showing CRUD Functionality,
 CI/CD Pipeline Automation when new Github code pushed your changes should automatically be reflected on the deployed application without manual configuration.
 
 
+Video Link: https://drive.google.com/file/d/1GhrCVoXjZsUekaTdvcGG920ABlpzoG9H/view?usp=sharing
+
 
 
 ## 2. Table Of Contents
