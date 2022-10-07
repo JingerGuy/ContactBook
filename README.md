@@ -60,12 +60,13 @@ CI/CD Pipeline Automation when new Github code pushed your changes should automa
 2. Table Of Contents
 3. How to Install and Run The Project
 4. How to Use the Project
+5. License
 
 
 
 ## 3. How to Install and Run The Project
 
-- Clone this project from my Github ``` https://github.com/JingerGuy/ContactBook ```
+- Clone this project from my Github ``` git clone https://github.com/JingerGuy/ContactBook ```
 - Change your directory to installscripts ``` cd installscripts/ ``` 
 - Setup Docker with shell script 
   ``` bash install-docker.sh ```
@@ -93,6 +94,14 @@ CI/CD Pipeline Automation when new Github code pushed your changes should automa
 1. Clone this repository to get all the files ``` git clone https://github.com/JingerGuy/ContactBook  ```
 2. Install Python 3.10.6 ``` https://www.python.org/downloads/release/python-3106/```
 3. Install Flask 2.2.2 ``` https://www.python.org/downloads/release/python-3106/```
-4. Use your favourite IDE, Run the code and paste http://127.0.0.1:5000 into web browser to see the web application.
+4. Use your favourite IDE I Recommend Visual Studio Code.
+5. Open the project folder in your editor Run the code and paste http://127.0.0.1:5000 into web browser to see the web application.
+
+
+
+
+## 5. License
+
+Distributed with MIT License check ``` LICENSE.md ``` for information.
 
 
