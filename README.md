@@ -73,18 +73,19 @@ CI/CD Pipeline Automation when new Github code pushed your changes should automa
 - Setup Docker Compose with shell script
   ``` bash install-dockercompose.sh ```
 - Setup Jenkins with shell script
-- ``` bash install-jenkins.sh ```
+  ``` bash install-jenkins.sh ```
 - Run this command to be in Jenkins and Docker group ``` sudo usermod -aG docker jenkins ${USER}```
-- Port forward port 8080
+- ```Port forward port 8080```
 - In your webbrowser put in the url 
   ``` IPADDRESS:8080 ```
 - Copy ``` initial Admin Password ``` after Jenkins install and paste into Jenkins.
-- Click on install recommended plugins
+- Click on ```install recommended plugins```
 - Enter your User Information and save it to login next time on Jenkins.
+- Install these plugins on Jenkins ``` Docker, Docker Commons, Docker API, Docker Pipeline, Docker build-step ```
 - Input this command into terminal ``` sudo chmod 666 /var/run/docker.sock ```
 - Use Jenkinsfile for the ``` Jenkins Pipeline ```
 - Port forward ``` port 5000 ```
-- Setup Github webhooks to auto pull the code from your repository.
+- Setup Github webhooks to auto pull the code from your repository. ``` https://www.youtube.com/watch?v=ZiHMsEKklKQ ```
 - Push the code to have the pipeline test build and deploy.
 - Put ```http://[IPADDRESS]:5000``` into web browser to see the web application.
 
@@ -102,6 +103,6 @@ CI/CD Pipeline Automation when new Github code pushed your changes should automa
 
 ## 5. License
 
-Distributed with MIT License check ``` LICENSE.md ``` for information.
+Distributed with MIT License check ``` LICENSE.md ``` for more information.
 
 
