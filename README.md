@@ -91,8 +91,6 @@ Video Link: https://drive.google.com/file/d/1GhrCVoXjZsUekaTdvcGG920ABlpzoG9H/vi
 - ```Push a commit to github``` to have the webhook activate to push your project to the jenkins pipeline that will test build, push and pull and deploy the image.
 - Put ```http://[IPADDRESS]:5000``` into web browser to see the web application.
 
----
-
 
 ## 4. How to Use the Project
 
